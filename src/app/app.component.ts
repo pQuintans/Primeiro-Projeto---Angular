@@ -19,11 +19,14 @@ import { Pessoa } from './shared/output/output.component';
     <br>
     <button (click)="add()">Add</button> -->
 
-    <ng-template [ngIf]="pessoa">
+    <!-- <ng-template [ngIf]="pessoa">
       <h1>{{pessoa.nome}}</h1>
       <h2>{{pessoa.idade}}</h2>
     </ng-template>
-    <app-output (enviarDados)="setPessoa($event)"></app-output>
+    <app-output (enviarDados)="setPessoa($event)"></app-output> -->
+
+    <app-food-add></app-food-add>
+    <app-food-list></app-food-list>
 
     <router-outlet></router-outlet>
   `
